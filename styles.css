@@ -1,0 +1,114 @@
+body { background:#f8f9fa; font-family: 'Poppins', sans-serif; }
+
+.navbar-brand { font-weight:700; color: #28a745 !important; }
+
+.hero { background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1600&q=80') center/cover; color: white; padding: 100px 0; text-align: center; }
+
+.hero h1 { font-size: 3rem; font-weight: 700; }
+.hero p { font-size: 1.2rem; }
+
+.card { border:none; overflow:hidden; transition:0.3s; box-shadow:0 6px 18px rgba(0,0,0,0.08); }
+
+.card:hover { transform:translateY(-6px); box-shadow:0 12px 25px rgba(0,0,0,0.15); }
+
+.category-card { text-align: center; padding: 20px; }
+.category-card i { font-size: 3rem; color: #28a745; margin-bottom: 10px; }
+
+.product-card img { height: 200px; object-fit: cover; }
+.product-card .card-body { padding: 15px; }
+.product-card .card-title { font-size: 0.9rem; font-weight: 600; }
+.product-card .text-muted { font-size: 0.8rem; }
+
+.badge { position: absolute; top: 10px; left: 10px; }
+
+.discount { background: linear-gradient(135deg, #28a745, #20c997); color: white; padding: 60px 0; }
+
+.blog-card img { height: 200px; object-fit: cover; }
+
+.app { background: #f8f9fa; padding: 60px 0; }
+
+footer { background:#212529; color:#fff; padding: 40px 0; }
+footer h6 { color: #28a745; }
+footer a { color: #ccc; text-decoration: none; }
+footer a:hover { color: #fff; }
+
+.carousel-control-prev, .carousel-control-next { width: 5%; }
+
+/* Hero Banner */
+.hero-banner {
+  background: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)), url('https://via.placeholder.com/1600x600') center/cover no-repeat;
+  background-attachment: fixed;
+}
+
+/* Category Card Hover */
+.category-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.category-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+/* Product Card */
+.product-card img {
+  object-fit: cover;
+  height: 220px;
+}
+
+/* Make product titles consistent */
+.product-card .card-title {
+  font-size: 0.95rem;
+  margin-bottom: 0.25rem;
+}
+
+/* Blog Card */
+.blog-card img {
+  height: 200px;
+  object-fit: cover;
+}
+
+/* Discount Section */
+.discount {
+  background: linear-gradient(135deg, #28a745, #20c997);
+}
+
+/* App Section */
+.app img {
+  max-width: 120px;
+}
+
+/* Buttons */
+.btn-primary {
+  background-color: #2b8a3e;
+  border-color: #2b8a3e;
+}
+.btn-primary:hover {
+  background-color: #246f32;
+  border-color: #246f32;
+}
+
+/* Footer */
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive tweaks */
+@media (max-width: 576px) {
+  .hero-banner { padding: 3rem 1rem; }
+  .product-card img { height: 180px; }
+  .category-card .card-body { padding: 1rem; }
+  .blog-card img { height: 150px; }
+}
+
+/* Carousel images */
+.carousel-item img {
+  width: 100%;
+  height: 60vh;
+  object-fit: cover;
+}
+
+.carousel-caption {
+  background: rgba(0,0,0,0.35);
+  padding: 1rem 1.25rem;
+  border-radius: 6px;
+}

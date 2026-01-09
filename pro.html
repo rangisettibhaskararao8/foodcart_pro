@@ -1,0 +1,915 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FoodMart</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+  <div class="container">
+    <a class="navbar-brand" href="#" style="color: blue;">FoodMart</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#categories">Shop</a></li>
+        <li class="nav-item"><a class="nav-link" href="#products">Products</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search products">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="home" class="hero">
+  <div class="container">
+    <h1>100% Natural</h1>
+    <h2>Fresh Smoothie & Summer Juice</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dignissim massa diam elementum.</p>
+    <a href="#" class="btn btn-success btn-lg me-2">SHOP NOW</a>
+    <a href="#" class="btn btn-outline-light btn-lg">SHOP COLLECTION</a>
+  </div>
+</section>
+
+<!-- CATEGORIES -->
+<section id="categories" class="py-5">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-6 col-md-3">
+        <div class="card category-card">
+          <i class="fas fa-carrot"></i>
+          <h6>Fruits & Veges</h6>
+        </div>
+      </div>
+      <div class="col-6 col-md-3">
+        <div class="card category-card">
+          <i class="fas fa-bread-slice"></i>
+          <h6>Breads & Sweets</h6>
+        </div>
+      </div>
+      <div class="col-6 col-md-3">
+        <div class="card category-card">
+          <i class="fas fa-wine-glass"></i>
+          <h6>Wine & Drinks</h6>
+        </div>
+      </div>
+      <div class="col-6 col-md-3">
+        <div class="card category-card">
+          <i class="fas fa-drumstick-bite"></i>
+          <h6>Meat & Poultry</h6>
+        </div>
+      </div>
+      <div class="col-6 col-md-3">
+        <div class="card category-card">
+          <i class="fas fa-seedling"></i>
+          <h6>Organic Products</h6>
+        </div>
+      </div>
+      <div class="col-6 col-md-3">
+        <div class="card category-card">
+          <i class="fas fa-utensils"></i>
+          <h6>Dairy & Cheese</h6>
+        </div>
+      </div>
+      <div class="col-6 col-md-3">
+        <div class="card category-card">
+          <i class="fas fa-cookie-bite"></i>
+          <h6>Snacks</h6>
+        </div>
+      </div>
+      <div class="col-6 col-md-3">
+        <div class="card category-card">
+          <i class="fas fa-blender"></i>
+          <h6>Beverages</h6>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- NEWLY ARRIVED BRANDS -->
+<section class="py-5 bg-white">
+  <div class="container">
+    <h2 class="text-center mb-4">Newly Arrived Brands</h2>
+    <div id="newlyArrivedCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="row g-3">
+            <div class="col-6 col-md-3">
+              <div class="card product-card">
+                <img src="https://images.unsplash.com/photo-1550583724-b2692b85b150?auto=format&fit=crop&w=400&q=60" alt="Fresh Milk">
+                <div class="card-body text-center">
+                  <h6 class="card-title">Fresh Milk</h6>
+                  <p class="text-muted">1L • $2.50</p>
+                  <button class="btn btn-success btn-sm w-100">Add to Cart</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-md-3">
+              <div class="card product-card">
+                <img src="https://cdn.britannica.com/94/151894-050-F72A5317/Brown-eggs.jpg" alt="Organic Eggs">
+                <div class="card-body text-center">
+                  <h6 class="card-title">Organic Eggs</h6>
+                  <p class="text-muted">12 Pack • $4.00</p>
+                  <div class="d-flex justify-content-between">
+                    <span class="text-warning"><i class="fas fa-star"></i> 4.6</span>
+                    <button class="btn btn-success btn-sm">Add</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-md-3">
+              <div class="card product-card">
+                <img src="https://static.vecteezy.com/system/resources/thumbnails/025/282/026/small/stock-of-mix-a-cup-coffee-latte-more-motive-top-view-foodgraphy-generative-ai-photo.jpg" alt="Premium Coffee">
+                <div class="card-body text-center">
+                  <h6 class="card-title">Premium Coffee</h6>
+                  <p class="text-muted">250g • $8.50</p>
+                  <div class="d-flex justify-content-between">
+                    <span class="text-warning"><i class="fas fa-star"></i> 4.8</span>
+                    <button class="btn btn-success btn-sm">Add</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-md-3">
+              <div class="card product-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStIN00g_r4Stn2L14Ev-8_uKxlIKkQQ6_NrA&s" alt="Artisan Cheese">
+                <div class="card-body text-center">
+                  <h6 class="card-title">Artisan Cheese</h6>
+                  <p class="text-muted">200g • $6.00</p>
+                  <div class="d-flex justify-content-between">
+                    <span class="text-warning"><i class="fas fa-star"></i> 4.4</span>
+                    <button class="btn btn-success btn-sm">Add</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row g-3">
+            <div class="col-6 col-md-3">
+              <div class="card product-card">
+                <img src="https://images.unsplash.com/photo-1558642452-9d2a7deb7f62?auto=format&fit=crop&w=400&q=60" alt="Maple Syrup">
+                <div class="card-body text-center">
+                  <h6 class="card-title">Pure Maple Syrup</h6>
+                  <p class="text-muted">500ml • $12.00</p>
+                  <div class="d-flex justify-content-between">
+                    <span class="text-warning"><i class="fas fa-star"></i> 4.9</span>
+                    <button class="btn btn-success btn-sm">Add</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-md-3">
+              <div class="card product-card">
+                <img src="https://alphonsomango.in/cdn/shop/files/alphonsomango-in-berries-100-gms-buy-fresh-blueberries-online-40456022360321_a02b4a5a-3731-4701-83d2-095fc68b87e6.jpg?v=1734949336&width=1214" alt="Blueberries">
+                <div class="card-body text-center">
+                  <h6 class="card-title">Fresh Blueberries</h6>
+                  <p class="text-muted">250g • $5.50</p>
+                  <div class="d-flex justify-content-between">
+                    <span class="text-warning"><i class="fas fa-star"></i> 4.3</span>
+                    <button class="btn btn-success btn-sm">Add</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-md-3">
+              <div class="card product-card">
+                <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=400&q=60" alt="Sourdough Bread">
+                <div class="card-body text-center">
+                  <h6 class="card-title">Sourdough Bread</h6>
+                  <p class="text-muted">1 Loaf • $4.50</p>
+                  <div class="d-flex justify-content-between">
+                    <span class="text-warning"><i class="fas fa-star"></i> 4.7</span>
+                    <button class="btn btn-success btn-sm">Add</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-md-3">
+              <div class="card product-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRy5ak3N0Eni5sxwfdJ43VW_uLew3oEGOxcgQ&s" alt="Tomato Sauce">
+                <div class="card-body text-center">
+                  <h6 class="card-title">Organic Tomato Sauce</h6>
+                  <p class="text-muted">680g • $3.20</p>
+                  <div class="d-flex justify-content-between">
+                    <span class="text-warning"><i class="fas fa-star"></i> 4.5</span>
+                    <button class="btn btn-success btn-sm">Add</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#newlyArrivedCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#newlyArrivedCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- TRENDING PRODUCTS -->
+<section id="products" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center mb-4">Trending Products</h2>
+    <div id="trendingCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="row g-3">
+            <div class="col-6 col-md-3">
+              <div class="card product-card">
+                <span class="badge bg-danger">-30%</span>
+                <img src="https://images.unsplash.com/photo-1541519227354-08fa5d50c44d?auto=format&fit=crop&w=400&q=60" alt="Avocado Toast">
+                <div class="card-body text-center">
+                  <h6 class="card-title">Avocado Toast Set</h6>
+                  <p class="text-muted"><del>$16.00</del> $11.20</p>
+                  <div class="d-flex justify-content-between">
+                    <span class="text-warning"><i class="fas fa-star"></i> 4.8</span>
+                    <button class="btn btn-success btn-sm">Add</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-md-3">
+              <div class="card product-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTK89O7tCyxce_Vy80kJh5F31BBMYpBdfLHpA&s" alt="Smoothie Bowl">
+                <div class="card-body text-center">
+                  <h6 class="card-title">Superfood Smoothie Bowl</h6>
+                  <p class="text-muted">Ingredients Kit • $12.50</p>
+                  <div class="d-flex justify-content-between">
+                    <span class="text-warning"><i class="fas fa-star"></i> 4.6</span>
+                    <button class="btn btn-success btn-sm">Add</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-md-3">
+              <div class="card product-card">
+                <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=400&q=60" alt="Vegan Burger">
+                <div class="card-body text-center">
+                  <h6 class="card-title">Plant-Based Burger</h6>
+                  <p class="text-muted">4 Patties • $9.50</p>
+                  <div class="d-flex justify-content-between">
+                    <span class="text-warning"><i class="fas fa-star"></i> 4.4</span>
+                    <button class="btn btn-success btn-sm">Add</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-md-3">
+              <div class="card product-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFLmGIJZbG3_rCkjwEOstuljlG5ROwjZr_cQ&s" alt="Protein Bars">
+                <div class="card-body text-center">
+                  <h6 class="card-title">Energy Protein Bars</h6>
+                  <p class="text-muted">Pack of 12 • $15.00</p>
+                  <div class="d-flex justify-content-between">
+                    <span class="text-warning"><i class="fas fa-star"></i> 4.7</span>
+                    <button class="btn btn-success btn-sm">Add</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row g-3">
+            <div class="col-6 col-md-3">
+              <div class="card product-card">
+                <img src="https://m.media-amazon.com/images/I/61UWsV7jb1L._AC_UF894,1000_QL80_.jpg" alt="Keto Snacks">
+                <div class="card-body text-center">
+                  <h6 class="card-title">Keto Snack Mix</h6>
+                  <p class="text-muted">300g • $8.50</p>
+                  <div class="d-flex justify-content-between">
+                    <span class="text-warning"><i class="fas fa-star"></i> 4.5</span>
+                    <button class="btn btn-success btn-sm">Add</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-md-3">
+              <div class="card product-card">
+                <img src="https://cdn.shopify.com/s/files/1/0528/5173/6769/files/best-type-of-green-tea.jpg?v=1637234687" alt="Green Tea">
+                <div class="card-body text-center">
+                  <h6 class="card-title">Organic Green Tea</h6>
+                  <p class="text-muted">50 Bags • $6.00</p>
+                  <div class="d-flex justify-content-between">
+                    <span class="text-warning"><i class="fas fa-star"></i> 4.3</span>
+                    <button class="btn btn-success btn-sm">Add</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-md-3">
+              <div class="card product-card">
+                <img src="https://godshalls.com/wp-content/uploads/2022/04/8oz-Organic-TurkeyBacon@2x-1-1024x568.png" alt="Turkey Bacon">
+                <div class="card-body text-center">
+                  <h6 class="card-title">Turkey Bacon</h6>
+                  <p class="text-muted">200g • $7.50</p>
+                  <div class="d-flex justify-content-between">
+                    <span class="text-warning"><i class="fas fa-star"></i> 4.6</span>
+                    <button class="btn btn-success btn-sm">Add</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-md-3">
+              <div class="card product-card">
+                <img src="https://m.media-amazon.com/images/I/61MoSa9A-jL._AC_UF894,1000_QL80_.jpg" alt="Mixed Berries">
+                <div class="card-body text-center">
+                  <h6 class="card-title">Mixed Berries Pack</h6>
+                  <p class="text-muted">500g • $8.00</p>
+                  <div class="d-flex justify-content-between">
+                    <span class="text-warning"><i class="fas fa-star"></i> 4.4</span>
+                    <button class="btn btn-success btn-sm">Add</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#trendingCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#trendingCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- BEST SELLING PRODUCTS -->
+<section class="py-5 bg-white">
+  <div class="container">
+    <h2 class="text-center mb-4">Best selling products</h2>
+    <div id="bestSellingCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="row g-3">
+            <div class="col-6 col-md-3">
+              <div class="card product-card">
+                <span class="badge bg-danger">-15%</span>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThDUwP1KgQutji82rbr7yjuOic8eZmnTLpAg&s" alt="Whole Grain Pasta">
+                <div class="card-body text-center">
+                  <h6 class="card-title">Whole Grain Pasta</h6>
+                  <p class="text-muted">500g • $3.50</p>
+                  <div class="d-flex justify-content-between">
+                    <span class="text-warning"><i class="fas fa-star"></i> 4.7</span>
+                    <button class="btn btn-success btn-sm">Add</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-md-3">
+              <div class="card product-card">
+                <span class="badge bg-danger">-15%</span>
+                <img src="https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5?auto=format&fit=crop&w=400&q=60" alt="Olive Oil">
+                <div class="card-body text-center">
+                  <h6 class="card-title">Extra Virgin Olive Oil</h6>
+                  <p class="text-muted">500ml • $12.00</p>
+                  <div class="d-flex justify-content-between">
+                    <span class="text-warning"><i class="fas fa-star"></i> 4.8</span>
+                    <button class="btn btn-success btn-sm">Add</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-md-3">
+              <div class="card product-card">
+                <img src="https://images.unsplash.com/photo-1550583724-b2692b85b150?auto=format&fit=crop&w=400&q=60" alt="Almond Butter">
+                <div class="card-body text-center">
+                  <h6 class="card-title">Almond Butter</h6>
+                  <p class="text-muted">350g • $8.50</p>
+                  <div class="d-flex justify-content-between">
+                    <span class="text-warning"><i class="fas fa-star"></i> 4.6</span>
+                    <button class="btn btn-success btn-sm">Add</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-md-3">
+              <div class="card product-card">
+                <img src="https://m.media-amazon.com/images/I/613AStmWOKL._AC_UF894,1000_QL80_.jpg" alt="Greek Yogurt">
+                <div class="card-body text-center">
+                  <h6 class="card-title">Greek Yogurt</h6>
+                  <p class="text-muted">1kg • $6.00</p>
+                  <div class="d-flex justify-content-between">
+                    <span class="text-warning"><i class="fas fa-star"></i> 4.5</span>
+                    <button class="btn btn-success btn-sm">Add</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row g-3">
+            <div class="col-6 col-md-3">
+              <div class="card product-card">
+                <img src="https://cdn.loveandlemons.com/wp-content/uploads/2020/01/granola.jpg" alt="Granola">
+                <div class="card-body text-center">
+                  <h6 class="card-title">Homemade Granola</h6>
+                  <p class="text-muted">400g • $7.50</p>
+                  <div class="d-flex justify-content-between">
+                    <span class="text-warning"><i class="fas fa-star"></i> 4.4</span>
+                    <button class="btn btn-success btn-sm">Add</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-md-3">
+              <div class="card product-card">
+                <img src="https://images.unsplash.com/photo-1607623814075-e51df1bdc82f?auto=format&fit=crop&w=400&q=60" alt="Beef Jerky">
+                <div class="card-body text-center">
+                  <h6 class="card-title">Grass-Fed Beef Jerky</h6>
+                  <p class="text-muted">150g • $9.00</p>
+                  <div class="d-flex justify-content-between">
+                    <span class="text-warning"><i class="fas fa-star"></i> 4.7</span>
+                    <button class="btn btn-success btn-sm">Add</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-md-3">
+              <div class="card product-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMe_2sQ3gPtZl5GAWVkLO7bgv3CJg0fpDNAg&s" alt="Strawberries">
+                <div class="card-body text-center">
+                  <h6 class="card-title">Fresh Strawberries</h6>
+                  <p class="text-muted">250g • $4.50</p>
+                  <div class="d-flex justify-content-between">
+                    <span class="text-warning"><i class="fas fa-star"></i> 4.3</span>
+                    <button class="btn btn-success btn-sm">Add</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-md-3">
+              <div class="card product-card">
+                <img src="https://images.unsplash.com/photo-1558642452-9d2a7deb7f62?auto=format&fit=crop&w=400&q=60" alt="Honey">
+                <div class="card-body text-center">
+                  <h6 class="card-title">Wildflower Honey</h6>
+                  <p class="text-muted">500g • $11.00</p>
+                  <div class="d-flex justify-content-between">
+                    <span class="text-warning"><i class="fas fa-star"></i> 4.9</span>
+                    <button class="btn btn-success btn-sm">Add</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#bestSellingCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#bestSellingCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- DISCOUNT -->
+<section class="discount">
+  <div class="container text-center">
+    <h2>Get 25% Discount on your first purchase</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dictumst amet, metus, sit massa posuere maecenas. At tellus ut nunc amet vel egestas.</p>
+    <div class="row justify-content-center">
+      <div class="col-md-4">
+        <input class="form-control mb-3" placeholder="Name">
+        <input class="form-control mb-3" placeholder="Email">
+        <button class="btn btn-light">Submit</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MOST POPULAR PRODUCTS -->
+<section class="py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center mb-4">Most popular products</h2>
+    <div id="popularCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="row g-3">
+            <div class="col-6 col-md-3">
+              <div class="card product-card">
+                <img src="https://images.unsplash.com/photo-1467003909585-2f8a72700288?auto=format&fit=crop&w=400&q=60" alt="Fresh Salmon">
+                <div class="card-body text-center">
+                  <h6 class="card-title">Fresh Atlantic Salmon</h6>
+                  <p class="text-muted">500g • $18.50</p>
+                  <div class="d-flex justify-content-between">
+                    <span class="text-warning"><i class="fas fa-star"></i> 4.8</span>
+                    <button class="btn btn-success btn-sm">Add</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-md-3">
+              <div class="card product-card">
+                <img src="https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?auto=format&fit=crop&w=400&q=60" alt="Quinoa">
+                <div class="card-body text-center">
+                  <h6 class="card-title">Organic Quinoa</h6>
+                  <p class="text-muted">1kg • $8.50</p>
+                  <div class="d-flex justify-content-between">
+                    <span class="text-warning"><i class="fas fa-star"></i> 4.6</span>
+                    <button class="btn btn-success btn-sm">Add</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-md-3">
+              <div class="card product-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRM1bjLuveRZ6g0nUu_L_XeaMdK3oiyDk_HwA&s" alt="Dark Chocolate">
+                <div class="card-body text-center">
+                  <h6 class="card-title">Premium Dark Chocolate</h6>
+                  <p class="text-muted">200g • $6.50</p>
+                  <div class="d-flex justify-content-between">
+                    <span class="text-warning"><i class="fas fa-star"></i> 4.7</span>
+                    <button class="btn btn-success btn-sm">Add</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-md-3">
+              <div class="card product-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6q2wDVivRlRbmklmzmbKV5sDlPQDwjhP4xA&s" alt="Herbal Tea">
+                <div class="card-body text-center">
+                  <h6 class="card-title">Herbal Tea Collection</h6>
+                  <p class="text-muted">25 Bags • $7.00</p>
+                  <div class="d-flex justify-content-between">
+                    <span class="text-warning"><i class="fas fa-star"></i> 4.5</span>
+                    <button class="btn btn-success btn-sm">Add</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row g-3">
+            <div class="col-6 col-md-3">
+              <div class="card product-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRf9Ds2262BNDa5SdgjFb2aCI4rJx27AUZSA&s" alt="Croissants">
+                <div class="card-body text-center">
+                  <h6 class="card-title">Butter Croissants</h6>
+                  <p class="text-muted">Pack of 4 • $5.50</p>
+                  <div class="d-flex justify-content-between">
+                    <span class="text-warning"><i class="fas fa-star"></i> 4.4</span>
+                    <button class="btn btn-success btn-sm">Add</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-md-3">
+              <div class="card product-card">
+                <img src="https://images.unsplash.com/photo-1607623814075-e51df1bdc82f?auto=format&fit=crop&w=400&q=60" alt="Chicken Breast">
+                <div class="card-body text-center">
+                  <h6 class="card-title">Free-Range Chicken Breast</h6>
+                  <p class="text-muted">1kg • $12.00</p>
+                  <div class="d-flex justify-content-between">
+                    <span class="text-warning"><i class="fas fa-star"></i> 4.6</span>
+                    <button class="btn btn-success btn-sm">Add</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-md-3">
+              <div class="card product-card">
+                <img src="https://5.imimg.com/data5/MS/SA/MY-41645336/sweet-mango-fruit.jpg" alt="Mangoes">
+                <div class="card-body text-center">
+                  <h6 class="card-title">Sweet Mangoes</h6>
+                  <p class="text-muted">2kg • $9.00</p>
+                  <div class="d-flex justify-content-between">
+                    <span class="text-warning"><i class="fas fa-star"></i> 4.3</span>
+                    <button class="btn btn-success btn-sm">Add</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-md-3">
+              <div class="card product-card">
+                <img src="https://images.unsplash.com/photo-1558642452-9d2a7deb7f62?auto=format&fit=crop&w=400&q=60" alt="Manuka Honey">
+                <div class="card-body text-center">
+                  <h6 class="card-title">Manuka Honey</h6>
+                  <p class="text-muted">250g • $25.00</p>
+                  <div class="d-flex justify-content-between">
+                    <span class="text-warning"><i class="fas fa-star"></i> 4.9</span>
+                    <button class="btn btn-success btn-sm">Add</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#popularCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#popularCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- JUST ARRIVED -->
+<section class="py-5 bg-white">
+  <div class="container">
+    <h2 class="text-center mb-4">Just arrived</h2>
+    <div id="justArrivedCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="row g-3">
+            <div class="col-6 col-md-3">
+              <div class="card product-card">
+                <img src="https://images.unsplash.com/photo-1571771019784-3ff35f4f4277?auto=format&fit=crop&w=400&q=60" alt="Matcha Powder">
+                <div class="card-body text-center">
+                  <h6 class="card-title">Ceremonial Matcha Powder</h6>
+                  <p class="text-muted">100g • $22.00</p>
+                  <div class="d-flex justify-content-between">
+                    <span class="text-warning"><i class="fas fa-star"></i> 4.7</span>
+                    <button class="btn btn-success btn-sm">Add</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-md-3">
+              <div class="card product-card">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Coconut_Drink%2C_Pangandaran.JPG/1200px-Coconut_Drink%2C_Pangandaran.JPG" alt="Coconut Water">
+                <div class="card-body text-center">
+                  <h6 class="card-title">Pure Coconut Water</h6>
+                  <p class="text-muted">1L • $3.50</p>
+                  <div class="d-flex justify-content-between">
+                    <span class="text-warning"><i class="fas fa-star"></i> 4.4</span>
+                    <button class="btn btn-success btn-sm">Add</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-md-3">
+              <div class="card product-card">
+                <img src="https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?auto=format&fit=crop&w=400&q=60" alt="Chia Seeds">
+                <div class="card-body text-center">
+                  <h6 class="card-title">Organic Chia Seeds</h6>
+                  <p class="text-muted">250g • $6.50</p>
+                  <div class="d-flex justify-content-between">
+                    <span class="text-warning"><i class="fas fa-star"></i> 4.6</span>
+                    <button class="btn btn-success btn-sm">Add</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-md-3">
+              <div class="card product-card">
+                <img src="https://images.unsplash.com/photo-1550583724-b2692b85b150?auto=format&fit=crop&w=400&q=60" alt="Plant-based Milk">
+                <div class="card-body text-center">
+                  <h6 class="card-title">Almond Plant-Based Milk</h6>
+                  <p class="text-muted">1L • $4.00</p>
+                  <div class="d-flex justify-content-between">
+                    <span class="text-warning"><i class="fas fa-star"></i> 4.3</span>
+                    <button class="btn btn-success btn-sm">Add</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row g-3">
+            <div class="col-6 col-md-3">
+              <div class="card product-card">
+                <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=400&q=60" alt="Gluten-Free Bread">
+                <div class="card-body text-center">
+                  <h6 class="card-title">Gluten-Free Sourdough</h6>
+                  <p class="text-muted">1 Loaf • $7.50</p>
+                  <div class="d-flex justify-content-between">
+                    <span class="text-warning"><i class="fas fa-star"></i> 4.5</span>
+                    <button class="btn btn-success btn-sm">Add</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-md-3">
+              <div class="card product-card">
+                <img src="https://images.unsplash.com/photo-1607623814075-e51df1bdc82f?auto=format&fit=crop&w=400&q=60" alt="Turkey Sausage">
+                <div class="card-body text-center">
+                  <h6 class="card-title">Organic Turkey Sausage</h6>
+                  <p class="text-muted">400g • $10.00</p>
+                  <div class="d-flex justify-content-between">
+                    <span class="text-warning"><i class="fas fa-star"></i> 4.4</span>
+                    <button class="btn btn-success btn-sm">Add</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-md-3">
+              <div class="card product-card">
+                <img src="https://images.unsplash.com/photo-1558642452-9d2a7deb7f62?auto=format&fit=crop&w=400&q=60" alt="Bee Pollen">
+                <div class="card-body text-center">
+                  <h6 class="card-title">Raw Bee Pollen</h6>
+                  <p class="text-muted">150g • $18.00</p>
+                  <div class="d-flex justify-content-between">
+                    <span class="text-warning"><i class="fas fa-star"></i> 4.8</span>
+                    <button class="btn btn-success btn-sm">Add</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-md-3">
+              <div class="card product-card">
+                <img src="https://m.media-amazon.com/images/I/A168OvDqZCL._AC_UF1000,1000_QL80_.jpg" alt="Spice Blend">
+                <div class="card-body text-center">
+                  <h6 class="card-title">Moroccan Spice Blend</h6>
+                  <p class="text-muted">100g • $8.50</p>
+                  <div class="d-flex justify-content-between">
+                    <span class="text-warning"><i class="fas fa-star"></i> 4.6</span>
+                    <button class="btn btn-success btn-sm">Add</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#justArrivedCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#justArrivedCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- BLOG -->
+<section class="py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center mb-4">Our Recent Blog</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card blog-card">
+          <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=600&q=60" alt="Blog 1">
+          <div class="card-body">
+            <h6>Top 10 casual look ideas to dress up your kids</h6>
+            <p class="text-muted small">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquet eleifend viverra enim tincidunt donec quam.</p>
+            <small class="text-muted">25 AUG 2021</small>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card blog-card">
+          <img src="https://images.unsplash.com/photo-1445205170230-053b83016050?auto=format&fit=crop&w=600&q=60" alt="Blog 2">
+          <div class="card-body">
+            <h6>Latest trends of wearing street wears supremely</h6>
+            <p class="text-muted small">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquet eleifend viverra enim tincidunt donec quam.</p>
+            <small class="text-muted">28 AUG 2021</small>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card blog-card">
+          <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=600&q=60" alt="Blog 3">
+          <div class="card-body">
+            <h6>10 Different Types of comfortable clothes ideas for women</h6>
+            <p class="text-muted small">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquet eleifend viverra enim tincidunt donec quam.</p>
+            <small class="text-muted">22 AUG 2021</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- APP -->
+<section class="app">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-6">
+        <h2>Shop faster with FoodMart App</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sagittis sed ptibus liberolectus nonet psryroin. Amet sed lorem posuere sit iaculis amet, ac urna.</p>
+        <div class="d-flex mt-3">
+          <img src="https://via.placeholder.com/120x40?text=App+Store" alt="App Store" class="me-3">
+          <img src="https://via.placeholder.com/120x40?text=Google+Play" alt="Google Play">
+        </div>
+      </div>
+      <div class="col-md-6 text-center">
+        <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&w=400&q=60" alt="Phone" class="img-fluid">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURES -->
+<section class="py-5 bg-white">
+  <div class="container">
+    <h2 class="text-center mb-4">People are also looking for</h2>
+    <div class="row text-center g-4">
+      <div class="col-md-3">
+        <i class="fas fa-truck fa-3x text-success mb-3"></i>
+        <h6>Free delivery</h6>
+        <p class="text-muted small">Lorem ipsum dolor sit amet, consectetur adipi elit.</p>
+      </div>
+      <div class="col-md-3">
+        <i class="fas fa-lock fa-3x text-success mb-3"></i>
+        <h6>100% secure payment</h6>
+        <p class="text-muted small">Lorem ipsum dolor sit amet, consectetur adipi elit.</p>
+      </div>
+      <div class="col-md-3">
+        <i class="fas fa-shield-alt fa-3x text-success mb-3"></i>
+        <h6>Quality guarantee</h6>
+        <p class="text-muted small">Lorem ipsum dolor sit amet, consectetur adipi elit.</p>
+      </div>
+      <div class="col-md-3">
+        <i class="fas fa-tags fa-3x text-success mb-3"></i>
+        <h6>guaranteed savings</h6>
+        <p class="text-muted small">Lorem ipsum dolor sit amet, consectetur adipi elit.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-4">Get in Touch</h2>
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <input class="form-control mb-3" placeholder="Name">
+        <input class="form-control mb-3" placeholder="Email">
+        <textarea class="form-control mb-3" placeholder="Message"></textarea>
+        <button class="btn btn-success w-100">Send Message</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="py-5">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-md-3">
+        <h5>FoodMart</h5>
+        <p class="small">Your trusted source for fresh groceries and organic products.</p>
+      </div>
+      <div class="col-md-3">
+        <h6>About us</h6>
+        <ul class="list-unstyled small">
+          <li><a href="#">Our Story</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Press</a></li>
+          <li><a href="#">Affiliate Programme</a></li>
+        </ul>
+      </div>
+      <div class="col-md-3">
+        <h6>Customer Service</h6>
+        <ul class="list-unstyled small">
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Returns & Refunds</a></li>
+          <li><a href="#">Cookie Guidelines</a></li>
+          <li><a href="#">Delivery Information</a></li>
+        </ul>
+      </div>
+      <div class="col-md-3">
+        <h6>Subscribe Us</h6>
+        <p class="small">Subscribe to our newsletter to get updates about our grand offers.</p>
+        <input class="form-control mb-2" placeholder="Email">
+        <button class="btn btn-success btn-sm">Subscribe</button>
+      </div>
+    </div>
+    <hr class="my-4">
+    <div class="text-center small">
+      <p class="mb-0">© 2023 Foodmart. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
